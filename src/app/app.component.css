@@ -1,3 +1,9 @@
+div#crypto-input {
+  margin: 0 auto;
+  padding: 1em;
+  width: 75%;
+}
+
 div#crypto-container {
     background:white;
     width: 70%;
