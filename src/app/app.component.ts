@@ -14,10 +14,13 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this._data.getPrices()
+    this.getPrices("BTC,ETH,IOT");
+  }
+
+  getPrices(coins) {
+    this._data.getPrices(coins)
       .subscribe(res => {
         this.cryptos = res;
-        // console.log(res);
       });
   }
 }
